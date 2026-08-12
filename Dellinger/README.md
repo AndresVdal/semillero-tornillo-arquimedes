@@ -153,8 +153,8 @@ Monitores definidos: `report-def-0` y `report-def-1` (torque), `mdot_inlet`,
 
 ### Fase A — Corregir la geometría (bloqueante)
 
-- [ ] Rehacer el CAD con patrón circular de **3 instancias** sobre 360°
-- [ ] Verificar la tercera hélice en la fase **313°**
+- [✓] Rehacer el CAD con patrón circular de **3 instancias** sobre 360°
+- [✓] Verificar la tercera hélice en la fase **313°**
 - [ ] Rehacer la operación booleana del dominio fluido
 - [ ] Exportar STEP y confirmar **36 superficies B-spline**
 - [ ] Volver a mallar
