@@ -1,0 +1,29 @@
+
+Error [node 0] [time 7/22/26 15:2:56] Abnormal Exit!
+
+Error [node 0] [time 7/22/26 15:41:40] Abnormal Exit!
+
+Error [node 0] [time 7/28/26 19:47:41] Abnormal Exit!
+
+Error [node 0] [time 7/30/26 11:54:45] Abnormal Exit!
+Node 0 Fatal signal raised sig = Segmentation fault
+ 3e78e480 CX_Primitive_Error
+ a92ff260 seh_filter_exe
+ 3e80b650 logical_right_shift
+ 76f5f4c0 _C_specific_handler
+ ac404700 _chkstk
+ ac2e5900 RtlLocateExtendedFeature
+ ac4040b0 KiUserExceptionDispatcher
+ 3c69c920 Thread_Min_Max_Id
+ 3c69c920 Thread_Min_Max_Id
+ 8f7f44d0 io::PersistenceReader::readNCMetricDataOptimized
+ 8f7f1900 io::PersistenceReader::readNCMetricData
+ bb909060 read_nc_metric_data
+ 3b188e40 InitializeFensapIcePrimitives
+ 3e7f56d0 eval
+ 3b0fa000 PRF_Command_Start
+ 3b0fc840 PRF_Node_repl
+ 3b108cd0 Delay_Error
+ 3e80b650 logical_right_shift
+ abfee940 BaseThreadInitThunk
+ ac34ad40 RtlUserThreadStart

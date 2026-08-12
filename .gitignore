@@ -1,0 +1,108 @@
+# ============================================================
+#  .gitignore — Semillero SIIM / Turbina de tornillo de Arquímedes
+#  Versiona solo texto y geometria de intercambio.
+#  Nunca los binarios pesados de Ansys.
+# ============================================================
+
+# ---------- Datos pesados de Fluent (NUNCA subir) ----------
+*.h5
+*.cas
+*.cas.gz
+*.cas.h5
+*.dat
+*.dat.gz
+*.dat.h5
+*.cdat
+*.cffdb
+*.msh
+*.msh.h5
+*.pdat
+
+# ---------- Mallas y CAD binario pesado ----------
+*.cdb
+*.db
+*.rst
+*.rth
+*.mechdb
+*.agdb
+*.scdoc
+*.scdocx
+*.dsdb
+*.engd
+*.SLDPRT
+*.SLDASM
+
+# ---------- Carpetas de trabajo de Workbench ----------
+*_files/dp0/**/MECH/
+*_files/dp0/**/CFX/
+*_files/dp0/**/Post/
+*_files/dp0/**/SYS/
+*_files/dpall/
+*_files/session_files/
+*_files/.mech*/
+
+# ---------- Temporales y logs ----------
+*.tmp
+*.temp
+*.bak
+*.lock
+*.err
+*.autosave*
+cleanup-fluent-*.bat
+core.*
+nohup.out
+autopush.log
+.autopush.lock
+
+# ---------- Herramientas locales ----------
+.claude/
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# ---------- Sistema operativo ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ============================================================
+#  EXCEPCIONES: esto SI se versiona (el ! anula lo de arriba)
+# ============================================================
+
+# Monitores de Fluent: texto plano, pocos KB.
+# Son LO MAS IMPORTANTE para el seguimiento de convergencia.
+!*.out
+!*-rfile.out
+
+# Transcripts, journals y scripts: reproducibilidad del caso
+!*.trn
+!*.jou
+!*.scm
+!*.py
+!*.ps1
+
+# Proyectos de Workbench (pequenos, definen el arbol del caso)
+!*.wbpj
+
+# Geometria en formato de intercambio (texto)
+!*.step
+!*.stp
+!*.iges
+!*.igs
+!*.x_t
+
+# Documentacion y datos de campo
+!*.md
+!*.txt
+!*.csv
+!*.json
+!*.yml
+
+# Imagenes de resultados y capturas
+!*.png
+!*.jpg
+!*.svg
+
+!.gitignore
+!.gitkeep

@@ -1,0 +1,19 @@
+# Sin conversion automatica de fin de linea.
+#
+# Los .out y .trn los escribe Fluent en Windows con CRLF. Si git los
+# reescribe a LF al guardarlos y a CRLF al sacarlos, cada archivo aparece
+# como modificado aunque no haya cambiado, y ademas se llena la consola de
+# avisos "LF will be replaced by CRLF".
+#
+# Con -text git guarda los bytes tal cual. Los diffs siguen funcionando.
+* -text
+
+# Tratar la geometria como binaria para no intentar fusionar diffs enormes
+*.step binary
+*.stp  binary
+*.iges binary
+*.igs  binary
+*.x_t  binary
+*.png  binary
+*.jpg  binary
+*.wbpj binary

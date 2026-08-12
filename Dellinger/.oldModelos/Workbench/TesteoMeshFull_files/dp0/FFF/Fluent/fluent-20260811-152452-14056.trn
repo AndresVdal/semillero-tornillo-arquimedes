@@ -1,0 +1,949 @@
+Auto-Transcript Start Time:  15:24:52, 11 Aug 2026 Hora est. Pacífico, Sudamérica 
+Current Directory: "C:\Users\estudiante.upb\Documents\Semillero\Modelos\Workbench\TesteoMeshFull_files\dp0\FFF\Fluent"
+
+              Welcome to ANSYS Fluent 2025 R2
+
+              Copyright 1987-2025 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Jun 16 2025 10:42:46 EDT  Build Id: 10204  
+ 
+Connected License Server List:	1055@10.152.168.6
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "BGAK519-030" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname     Core  O.S.         PID    Vendor                           
+-------------------------------------------------------------------------------
+n7    BGAK519-030  8/20  Windows-x64  24088  Intel(R) Core(TM) Ultra 7 265    
+n6    BGAK519-030  7/20  Windows-x64  24668  Intel(R) Core(TM) Ultra 7 265    
+n5    BGAK519-030  6/20  Windows-x64  24604  Intel(R) Core(TM) Ultra 7 265    
+n4    BGAK519-030  5/20  Windows-x64  26764  Intel(R) Core(TM) Ultra 7 265    
+n3    BGAK519-030  4/20  Windows-x64  26760  Intel(R) Core(TM) Ultra 7 265    
+n2    BGAK519-030  3/20  Windows-x64  6200   Intel(R) Core(TM) Ultra 7 265    
+n1    BGAK519-030  2/20  Windows-x64  23768  Intel(R) Core(TM) Ultra 7 265    
+n0*   BGAK519-030  1/20  Windows-x64  5696   Intel(R) Core(TM) Ultra 7 265    
+host  BGAK519-030        Windows-x64  25128  Intel(R) Core(TM) Ultra 7 265    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\estudiante.upb\\Documents\\Semillero\\Modelos\\Workbench\\TesteoMeshFull_files\\dp0\\FFF\\Fluent\\cleanup-fluent-BGAK519-030-25128.bat
+
+Graphics driver currently in use: dx11
+
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Multicore processors detected. Processor affinity set!
+
+Reading from BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/FFF.6-1-00000.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+     1061927 cells,     3 cell zones ...
+         971440 mixed cells,  zone id: 2397
+          42104 mixed cells,  zone id: 2593
+          48383 mixed cells,  zone id: 2651
+     6081913 faces,    16 face zones ...
+          11781 mixed interior faces,  zone id: 6
+           3201 mixed wall faces,  zone id: 4
+           2741 mixed wall faces,  zone id: 2
+          11859 mixed interior faces,  zone id: 1
+            322 polygonal pressure-outlet faces,  zone id: 166
+            277 polygonal pressure-outlet faces,  zone id: 165
+           5727 polygonal interface faces,  zone id: 164
+         246821 mixed interior faces,  zone id: 2653
+            334 polygonal pressure-outlet faces,  zone id: 163
+            284 polygonal velocity-inlet faces,  zone id: 162
+           5292 polygonal interface faces,  zone id: 161
+         218788 mixed interior faces,  zone id: 2595
+           2876 polygonal interface faces,  zone id: 160
+           2886 polygonal interface faces,  zone id: 159
+         170128 polygonal wall faces,  zone id: 158
+        5398596 mixed interior faces,  zone id: 2399
+     4427192 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 124435/2754 = 45.1834
+  Reading NCI Node Coordinates ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+	phase-1
+	phase-2
+	interaction
+     zones,
+	descarga-open-cascade-step-translator-7.9-1.3  (phase-2)
+	descarga-open-cascade-step-translator-7.9-1.3  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2  (phase-2)
+	entrada-open-cascade-step-translator-7.9-1.2  (phase-1)
+	rotatoria-open-cascade-step-translator-7.9-1.1  (phase-2)
+	rotatoria-open-cascade-step-translator-7.9-1.1  (phase-1)
+	interior--rotatoria-open-cascade-step-translator-7.9-1.1  (phase-2)
+	interior--rotatoria-open-cascade-step-translator-7.9-1.1  (phase-1)
+	rotatoria-open-cascade-step-translator-7.9-1.1:1  (phase-2)
+	rotatoria-open-cascade-step-translator-7.9-1.1:1  (phase-1)
+	int_rot_arriba  (phase-2)
+	int_rot_arriba  (phase-1)
+	int_rot_abajo  (phase-2)
+	int_rot_abajo  (phase-1)
+	interior--entrada-open-cascade-step-translator-7.9-1.2  (phase-2)
+	interior--entrada-open-cascade-step-translator-7.9-1.2  (phase-1)
+	inlet  (phase-2)
+	inlet  (phase-1)
+	top  (phase-2)
+	top  (phase-1)
+	interior--descarga-open-cascade-step-translator-7.9-1.3  (phase-2)
+	interior--descarga-open-cascade-step-translator-7.9-1.3  (phase-1)
+	outlet  (phase-2)
+	outlet  (phase-1)
+	top.1  (phase-2)
+	top.1  (phase-1)
+	int_rot_arriba-non-overlapping  (phase-1)
+	int_rot_arriba-non-overlapping  (phase-2)
+	entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping  (phase-2)
+	intf:01:entrada-open-cascade-step::int_rot_arriba  (phase-1)
+	intf:01:entrada-open-cascade-step::int_rot_arriba  (phase-2)
+	entrada-open-cascade-step-translator-7.9-1.2:1  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2:1  (phase-2)
+	intf:02:descarga-open-cascade-ste::int_rot_abajo  (phase-1)
+	intf:02:descarga-open-cascade-ste::int_rot_abajo  (phase-2)
+	descarga-open-cascade-step-translator-7.9-1.3:1  (phase-1)
+	descarga-open-cascade-step-translator-7.9-1.3:1  (phase-2)
+	descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping  (phase-1)
+	descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping  (phase-2)
+	int_rot_abajo-non-overlapping  (phase-1)
+	int_rot_abajo-non-overlapping  (phase-2)
+	top.1
+	outlet
+	interior--descarga-open-cascade-step-translator-7.9-1.3
+	top
+	inlet
+	interior--entrada-open-cascade-step-translator-7.9-1.2
+	int_rot_abajo
+	int_rot_arriba
+	rotatoria-open-cascade-step-translator-7.9-1.1:1
+	interior--rotatoria-open-cascade-step-translator-7.9-1.1
+	int_rot_arriba-non-overlapping
+	entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping
+	intf:01:entrada-open-cascade-step::int_rot_arriba
+	entrada-open-cascade-step-translator-7.9-1.2:1
+	intf:02:descarga-open-cascade-ste::int_rot_abajo
+	descarga-open-cascade-step-translator-7.9-1.3:1
+	descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping
+	int_rot_abajo-non-overlapping
+	rotatoria-open-cascade-step-translator-7.9-1.1
+	entrada-open-cascade-step-translator-7.9-1.2
+	descarga-open-cascade-step-translator-7.9-1.3
+     mesh interfaces,
+     parallel,
+Done.
+
+Reading from BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/FFF.6-1-00000.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+> (cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case & Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "ASG_M1_LISTOV5.cas.h5") "CFF Case Files (*.cas.h5 )")
+Multicore processors detected. Processor affinity set!
+
+       Clearing partially read grid.
+
+Reading from BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/ASG_M1_LISTOV5.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+     1061927 cells,     3 cell zones ...
+         971440 mixed cells,  zone id: 2397
+          42104 mixed cells,  zone id: 2593
+          48383 mixed cells,  zone id: 2651
+     6081787 faces,    17 face zones ...
+          11657 mixed interior faces,  zone id: 9
+           3201 mixed wall faces,  zone id: 7
+           2741 mixed wall faces,  zone id: 5
+          11857 mixed interior faces,  zone id: 4
+            322 polygonal pressure-outlet faces,  zone id: 166
+            277 polygonal pressure-outlet faces,  zone id: 165
+           5727 polygonal interface faces,  zone id: 164
+         246821 mixed interior faces,  zone id: 2653
+            334 polygonal pressure-outlet faces,  zone id: 163
+            284 polygonal mass-flow-inlet faces,  zone id: 162
+           5292 polygonal interface faces,  zone id: 161
+         218788 mixed interior faces,  zone id: 2595
+           2876 polygonal interface faces,  zone id: 160
+           2886 polygonal interface faces,  zone id: 159
+         111381 polygonal wall faces,  zone id: 158
+          58747 polygonal wall faces,  zone id: 1
+        5398596 mixed interior faces,  zone id: 2399
+     4427192 nodes,     1 node zone  ...
+  Done.
+
+
+Warning: this is a double-precision solver.
+
+Building...
+     mesh
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 2754/2836 = 0.971086
+Info: The mesh contains elements that are invalid or of poor quality.
+
+      A different numerical scheme will be applied to these elements,
+      which may affect the quality of the solution. It is recommended
+      that you consider removing the invalid and poor quality elements
+      in the mesh.
+
+      For more information on the invalid and poor quality elements,
+      please use the following TUI commands:
+
+      /mesh/check
+      /mesh/repair-improve/report-poor-elements.
+  Reading NCI Node Coordinates ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+	phase-1
+	phase-2
+	interaction
+     zones,
+	descarga-open-cascade-step-translator-7.9-1.3  (phase-2)
+	descarga-open-cascade-step-translator-7.9-1.3  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2  (phase-2)
+	entrada-open-cascade-step-translator-7.9-1.2  (phase-1)
+	rotatoria-open-cascade-step-translator-7.9-1.1  (phase-2)
+	rotatoria-open-cascade-step-translator-7.9-1.1  (phase-1)
+	interior--rotatoria-open-cascade-step-translator-7.9-1.1  (phase-2)
+	interior--rotatoria-open-cascade-step-translator-7.9-1.1  (phase-1)
+	tornillo  (phase-2)
+	tornillo  (phase-1)
+	int_rot_arriba  (phase-2)
+	int_rot_arriba  (phase-1)
+	int_rot_abajo  (phase-2)
+	int_rot_abajo  (phase-1)
+	interior--entrada-open-cascade-step-translator-7.9-1.2  (phase-2)
+	interior--entrada-open-cascade-step-translator-7.9-1.2  (phase-1)
+	top  (phase-2)
+	top  (phase-1)
+	interior--descarga-open-cascade-step-translator-7.9-1.3  (phase-2)
+	interior--descarga-open-cascade-step-translator-7.9-1.3  (phase-1)
+	outlet  (phase-2)
+	outlet  (phase-1)
+	top.1  (phase-2)
+	top.1  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2:1  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2:1  (phase-2)
+	descarga-open-cascade-step-translator-7.9-1.3:1  (phase-1)
+	descarga-open-cascade-step-translator-7.9-1.3:1  (phase-2)
+	inlet  (phase-1)
+	inlet  (phase-2)
+	artesa  (phase-1)
+	artesa  (phase-2)
+	int_rot_arriba-non-overlapping  (phase-1)
+	int_rot_arriba-non-overlapping  (phase-2)
+	entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping  (phase-1)
+	entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping  (phase-2)
+	intf:01:entrada-open-cascade-step::int_rot_arriba  (phase-1)
+	intf:01:entrada-open-cascade-step::int_rot_arriba  (phase-2)
+	intf:01:descarga-open-cascade-ste::int_rot_abajo  (phase-1)
+	intf:01:descarga-open-cascade-ste::int_rot_abajo  (phase-2)
+	descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping  (phase-1)
+	descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping  (phase-2)
+	int_rot_abajo-non-overlapping  (phase-1)
+	int_rot_abajo-non-overlapping  (phase-2)
+	top.1
+	outlet
+	interior--descarga-open-cascade-step-translator-7.9-1.3
+	top
+	interior--entrada-open-cascade-step-translator-7.9-1.2
+	int_rot_abajo
+	int_rot_arriba
+	tornillo
+	interior--rotatoria-open-cascade-step-translator-7.9-1.1
+	entrada-open-cascade-step-translator-7.9-1.2:1
+	descarga-open-cascade-step-translator-7.9-1.3:1
+	inlet
+	artesa
+	int_rot_arriba-non-overlapping
+	entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping
+	intf:01:entrada-open-cascade-step::int_rot_arriba
+	intf:01:descarga-open-cascade-ste::int_rot_abajo
+	descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping
+	int_rot_abajo-non-overlapping
+	rotatoria-open-cascade-step-translator-7.9-1.1
+	entrada-open-cascade-step-translator-7.9-1.2
+	descarga-open-cascade-step-translator-7.9-1.3
+     mesh interfaces,
+     parallel,
+
+Note: 3d, pressure-based, VOF, SST k-omega, transient case read into
+      3d, double precision, pressure-based, VOF, SST k-omega, transient solver.
+
+
+
+Done.
+
+Reading from BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/ASG_M1_LISTOV5.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Data...")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_inlet"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_inlet"))
+(cx-gui-do cx-activate-item "Flux Report Definition*PanelButtons*PushButton5(Compute)")
+
+                         phase-2
+                  Mass Flow Rate              [kg/s]
+-------------------------------- -------------------
+                           inlet           2.7946726
+(cx-gui-do cx-activate-item "Flux Report Definition*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-integer-entry "Run Calculation*Table1*Table7(Time Advancement)*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Time Steps)" 50)
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table7(Time Advancement)*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Time Steps)")
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table9(Solution Advancement)*Table1*PushButton3(Calculate)")
+
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11790  1.8226e-04  1.1633e-05  1.2989e-05  1.4635e-05  1.1935e-04  2.2167e-04  3.9489e-04  0:00:00   20
+!11790 solution is converged
+
+ Reversed flow on 248 faces of pressure-outlet 166.
+
+ Reversed flow on 107 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11795  1.8196e-04  1.1649e-05  1.2997e-05  1.4612e-05  1.1938e-04  2.2268e-04  3.9518e-04  0:01:28   15
+!11795 solution is converged
+Flow time = 4.417132770176977s, time step = 2371
+49 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11795  1.8196e-04  1.1649e-05  1.2997e-05  1.4612e-05  1.1938e-04  2.2268e-04  3.9518e-04  0:01:58   20
+
+ Reversed flow on 247 faces of pressure-outlet 166.
+
+ Reversed flow on 106 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11800  1.8137e-04  1.1634e-05  1.3016e-05  1.4591e-05  1.1954e-04  2.2337e-04  3.9522e-04  0:01:29   15
+!11800 solution is converged
+Flow time = 4.419055770151317s, time step = 2372
+48 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11800  1.8137e-04  1.1634e-05  1.3016e-05  1.4591e-05  1.1954e-04  2.2337e-04  3.9522e-04  0:01:58   20
+
+ Reversed flow on 246 faces of pressure-outlet 166.
+
+ Reversed flow on 106 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11805  1.8085e-04  1.1638e-05  1.3045e-05  1.4650e-05  1.1969e-04  2.2406e-04  3.9527e-04  0:01:29   15
+!11805 solution is converged
+Flow time = 4.420978770125657s, time step = 2373
+47 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11805  1.8085e-04  1.1638e-05  1.3045e-05  1.4650e-05  1.1969e-04  2.2406e-04  3.9527e-04  0:01:59   20
+
+ Reversed flow on 246 faces of pressure-outlet 166.
+
+ Reversed flow on 106 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11810  1.8092e-04  1.1659e-05  1.2996e-05  1.4661e-05  1.1993e-04  2.2437e-04  3.9518e-04  0:01:31   15
+!11810 solution is converged
+Flow time = 4.422901770099998s, time step = 2374
+46 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11810  1.8092e-04  1.1659e-05  1.2996e-05  1.4661e-05  1.1993e-04  2.2437e-04  3.9518e-04  0:02:01   20
+
+ Reversed flow on 245 faces of pressure-outlet 166.
+
+ Reversed flow on 106 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11815  1.8077e-04  1.1634e-05  1.2983e-05  1.4695e-05  1.2003e-04  2.2485e-04  3.9526e-04  0:01:33   15
+!11815 solution is converged
+Flow time = 4.424824770074338s, time step = 2375
+45 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11815  1.8077e-04  1.1634e-05  1.2983e-05  1.4695e-05  1.2003e-04  2.2485e-04  3.9526e-04  0:02:04   20
+
+ Reversed flow on 250 faces of pressure-outlet 166.
+
+ Reversed flow on 105 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11820  1.8038e-04  1.1623e-05  1.2919e-05  1.4670e-05  1.2006e-04  2.2473e-04  3.9498e-04  0:01:33   15
+!11820 solution is converged
+Flow time = 4.426747770048678s, time step = 2376
+44 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11820  1.8038e-04  1.1623e-05  1.2919e-05  1.4670e-05  1.2006e-04  2.2473e-04  3.9498e-04  0:02:04   20
+
+ Reversed flow on 250 faces of pressure-outlet 166.
+
+ Reversed flow on 105 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11825  1.8038e-04  1.1667e-05  1.2951e-05  1.4728e-05  1.2034e-04  2.2475e-04  3.9475e-04  0:01:35   15
+!11825 solution is converged
+Flow time = 4.428670770023018s, time step = 2377
+43 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11825  1.8038e-04  1.1667e-05  1.2951e-05  1.4728e-05  1.2034e-04  2.2475e-04  3.9475e-04  0:02:07   20
+
+ Reversed flow on 248 faces of pressure-outlet 166.
+
+ Reversed flow on 105 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11830  1.7881e-04  1.1723e-05  1.2924e-05  1.4717e-05  1.2049e-04  2.2525e-04  3.9463e-04  0:01:37   15
+!11830 solution is converged
+Flow time = 4.430593769997358s, time step = 2378
+42 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11830  1.7881e-04  1.1723e-05  1.2924e-05  1.4717e-05  1.2049e-04  2.2525e-04  3.9463e-04  0:02:10   20
+
+ Reversed flow on 248 faces of pressure-outlet 166.
+
+ Reversed flow on 104 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11835  1.7837e-04  1.1679e-05  1.2872e-05  1.4730e-05  1.2055e-04  2.2511e-04  3.9495e-04  0:01:40   15
+!11835 solution is converged
+Flow time = 4.432516769971699s, time step = 2379
+41 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11835  1.7837e-04  1.1679e-05  1.2872e-05  1.4730e-05  1.2055e-04  2.2511e-04  3.9495e-04  0:02:13   20
+
+ Reversed flow on 249 faces of pressure-outlet 166.
+
+ Reversed flow on 105 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11840  1.7862e-04  1.1740e-05  1.2891e-05  1.4786e-05  1.2071e-04  2.2575e-04  3.9476e-04  0:01:40   15
+!11840 solution is converged
+
+Writing to BGAK519-030:"C:\Users\estudiante.upb\Documents\Semillero\Modelos\Workbench\TesteoMeshFull_files\dp0\FFF\Fluent\./FFF.6-Setup-Output-1-02380.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+     1061927 cells,     3 zones ...
+     6081744 faces,    17 zones ...
+     4427192 nodes,     1 zone  ...
+  Done.
+
+  Writing NCI Node Coordinates ...
+  Done.
+Done.
+
+Writing to BGAK519-030:"C:\Users\estudiante.upb\Documents\Semillero\Modelos\Workbench\TesteoMeshFull_files\dp0\FFF\Fluent\./FFF.6-Setup-Output-1-02380.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+Open existing project file for writing: ./FFF.6-Setup-Output.flprj
+Flow time = 4.434439769946039s, time step = 2380
+40 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11840  1.7862e-04  1.1740e-05  1.2891e-05  1.4786e-05  1.2071e-04  2.2575e-04  3.9476e-04  0:02:13   20
+
+ Reversed flow on 249 faces of pressure-outlet 166.
+
+ Reversed flow on 104 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11845  1.7849e-04  1.1759e-05  1.2828e-05  1.4838e-05  1.2101e-04  2.2586e-04  3.9506e-04  0:01:42   15
+!11845 solution is converged
+Flow time = 4.436362769920379s, time step = 2381
+39 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity           k       omega  vf-phase-2     time/iter
+ 11845  1.7849e-04  1.1759e-05  1.2828e-05  1.4838e-05  1.2101e-04  2.2586e-04  3.9506e-04  0:02:16   20
+
+ Interrupting at the end of timestep.
+
+ Reversed flow on 246 faces of pressure-outlet 166.
+
+ Reversed flow on 104 faces of pressure-outlet 165.
+
+ Reversed flow on 334 faces of pressure-outlet 163.
+ 11850  1.7835e-04  1.1745e-05  1.2772e-05  1.4876e-05  1.2112e-04  2.2661e-04  3.9573e-04  0:01:41   15
+!11850 solution is converged
+Flow time = 4.438285769894719s, time step = 2382
+38 more time steps
+Done.
+
+Operation stopped.
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+/exit y
+(cx-gui-do cx-activate-item "Question*Cancel")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case & Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "ASG_M1_LISTOV6.cas.h5") "CFF Case/Data Files (*.cas.h5 *.dat.h5 )")
+
+Writing to BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/ASG_M1_LISTOV6.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+     1061927 cells,     3 zones ...
+     6081795 faces,    17 zones ...
+     4427192 nodes,     1 zone  ...
+  Done.
+
+  Writing NCI Node Coordinates ...
+  Done.
+Done.
+
+Writing to BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/ASG_M1_LISTOV6.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "Datos.dat.h5") "CFF Data Files (*.dat.h5 )")
+
+Writing to BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/Datos.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table1*Table1*PushButton1(Check Case)")
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 0)
+
+Checking the case set-up ...
+
+
+Done
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Case Check*Table1*Frame1" 2)
+(cx-gui-do cx-activate-item "Case Check*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Domain)*Table1*Table3(Interfaces)*PushButton1(Mesh)")
+(cx-gui-do cx-activate-item "Mesh Interfaces*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_intf"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_intf"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_intf"))
+(cx-gui-do cx-activate-item "Flux Report Definition*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '())
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '())
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 1 2))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 1 3))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                         mixture
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+descarga-open-cascade-step-translator-7.9-1.3:1            2.9544281
+entrada-open-cascade-step-translator-7.9-1.2:1           -2.7929646
+                ---------------- --------------------
+                             Net           0.16146346
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '())
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 0))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                         mixture
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+                          artesa                   -0
+                ---------------- --------------------
+                             Net                    0
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 0 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                         mixture
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+                          artesa                   -0
+descarga-open-cascade-step-translator-7.9-1.3:1            2.9544281
+                ---------------- --------------------
+                             Net            2.9544281
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                         mixture
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+                          artesa                   -0
+descarga-open-cascade-step-translator-7.9-1.3:1            2.9544281
+descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping                   -0
+entrada-open-cascade-step-translator-7.9-1.2:1           -2.7929646
+entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping                   -0
+                           inlet             2.795001
+                   int_rot_abajo           -2.9560027
+   int_rot_abajo-non-overlapping                   -0
+                  int_rot_arriba            2.7932473
+  int_rot_arriba-non-overlapping                   -0
+interior--descarga-open-cascade-step-translator-7.9-1.3           -69.466526
+interior--entrada-open-cascade-step-translator-7.9-1.2           -18.254033
+interior--rotatoria-open-cascade-step-translator-7.9-1.1           -3.9801192
+intf:01:descarga-open-cascade-ste::int_rot_abajo            2.9546727
+intf:01:entrada-open-cascade-step::int_rot_arriba           -2.7928446
+                          outlet           -3.4885806
+                             top         0.0088731453
+                           top.1         0.0073020831
+                        tornillo                   -0
+                ---------------- --------------------
+                             Net          -0.67869626
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|tornillo (wall, id=158)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|tornillo (wall, id=158)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|tornillo (wall, id=158)"))
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 2)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 3)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 4)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 5)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 6)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 7)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 8)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 9)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 10)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|artesa (wall, id=1)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|artesa (wall, id=1)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Wall|artesa (wall, id=1)"))
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 2)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 3)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 4)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 5)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 6)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 7)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 8)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 9)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 10)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|rotatoria-open-cascade-step-translator-7.9-1.1 (fluid, id=2397)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|rotatoria-open-cascade-step-translator-7.9-1.1 (fluid, id=2397)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|rotatoria-open-cascade-step-translator-7.9-1.1 (fluid, id=2397)"))
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 6)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 7)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 8)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 9)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 1)
+(cx-gui-do cx-activate-item "Fluid*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-activate-item "Moment Report Definition*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-set-list-selections "Moment Report Definition*Table1*Table2*List2(Zones)" '( 5))
+(cx-gui-do cx-activate-item "Moment Report Definition*Table1*Table2*List2(Zones)")
+(cx-gui-do cx-activate-item "Moment Report Definition*PanelButtons*PushButton6(Compute)")
+
+                          Moment               [N m]
+-------------------------------- -------------------
+                        tornillo         -0.18741116
+(cx-gui-do cx-activate-item "Moment Report Definition*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|report-def-0"))
+(cx-gui-do cx-set-integer-entry "Moment Report Definition*Table1*Table1*Table1(Options)*IntegerEntry7(Average Over)" 240)
+(cx-gui-do cx-activate-item "Moment Report Definition*Table1*Table1*Table1(Options)*IntegerEntry7(Average Over)")
+(cx-gui-do cx-activate-item "Moment Report Definition*PanelButtons*PushButton6(Compute)")
+
+                          Moment               [N m]
+-------------------------------- -------------------
+                        tornillo         -0.18741116
+(cx-gui-do cx-activate-item "Moment Report Definition*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_intf"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_intf"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|mdot_intf"))
+(cx-gui-do cx-set-list-selections "Flux Report Definition*Table2*Table2*List2(Boundaries)" '( 9 14))
+(cx-gui-do cx-activate-item "Flux Report Definition*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Report Definition*Table2*Table2*List2(Boundaries)" '( 14))
+(cx-gui-do cx-activate-item "Flux Report Definition*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Report Definition*PanelButtons*PushButton5(Compute)")
+
+                         phase-2
+                  Mass Flow Rate              [kg/s]
+-------------------------------- -------------------
+intf:01:entrada-open-cascade-step::int_rot_arriba                   0
+(cx-gui-do cx-activate-item "Flux Report Definition*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Volume Integrals"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Volume Integrals"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Volume Integrals"))
+(cx-gui-do cx-activate-item "Volume Integrals*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table1*DropDownList2(Phase)" '( 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table1*DropDownList2(Phase)")
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 14))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 14))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List2(Boundaries)" '( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List2(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton4(Write)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                         phase-1
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+                          artesa                   -0
+descarga-open-cascade-step-translator-7.9-1.3:1         0.0089903406
+descarga-open-cascade-step-translator-7.9-1.3:1-non-overlapping                   -0
+entrada-open-cascade-step-translator-7.9-1.2:1        -0.0092068477
+entrada-open-cascade-step-translator-7.9-1.2:1-non-overlapping                   -0
+                           inlet        0.00032810465
+                   int_rot_abajo        -0.0089884059
+   int_rot_abajo-non-overlapping                   -0
+                  int_rot_arriba         0.0092065004
+  int_rot_arriba-non-overlapping                   -0
+interior--descarga-open-cascade-step-translator-7.9-1.3          -0.22092731
+interior--entrada-open-cascade-step-translator-7.9-1.2        -0.0029395745
+interior--rotatoria-open-cascade-step-translator-7.9-1.1            0.1808048
+intf:01:descarga-open-cascade-ste::int_rot_abajo         0.0089881449
+intf:01:entrada-open-cascade-step::int_rot_arriba         -0.009205776
+                          outlet         -0.015657853
+                             top         0.0088731453
+                           top.1         0.0073020831
+                        tornillo                   -0
+                ---------------- --------------------
+                             Net        0.00084706749
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Multiphase (Volume of Fluid)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Multiphase (Volume of Fluid)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Multiphase (Volume of Fluid)"))
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 1)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 2)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1*Frame3(Phase Interaction)*Table1*Table1*Frame1*Frame2*Frame1*Frame3(Heat, Mass, Reactions)" 0)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Multiphase Model*Frame1" 1)
+(cx-gui-do cx-set-list-selections "Multiphase Model*Frame1*Frame2(Phases)*Table1*Frame1*Table1*Frame1(Phases)*List1" '( 1))
+(cx-gui-do cx-activate-item "Multiphase Model*Frame1*Frame2(Phases)*Table1*Frame1*Table1*Frame1(Phases)*List1")
+(cx-gui-do cx-activate-item "Multiphase Model*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case & Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "ASG_M1_LISTOV6.cas.h5") "CFF Case/Data Files (*.cas.h5 *.dat.h5 )")
+(cx-gui-do cx-activate-item "Question*OK")
+
+Writing to BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/ASG_M1_LISTOV6.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+     1061927 cells,     3 zones ...
+     6081795 faces,    17 zones ...
+     4427192 nodes,     1 zone  ...
+  Done.
+
+  Writing NCI Node Coordinates ...
+  Done.
+Done.
+
+Writing to BGAK519-030:"C:/Users/estudiante.upb/Documents/Semillero/Modelos/Workbench/TesteoMeshFull_files/dp0/FFF/Fluent/ASG_M1_LISTOV6.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  18:28:14, 11 Aug 2026 Hora est. Pacífico, Sudamérica 
+Total Transcript Time: 3 Hour 3 Minute 21 Second.

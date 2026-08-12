@@ -1,0 +1,29 @@
+Transcript Start Time:  15:44:25, 22 Jul 2026 Hora est. Pacífico, Sudamérica 
+Current Directory: "C:\Users\estudiante.upb"
+
+Build Time: Jun 16 2025 10:42:46 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v252/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname     Core  O.S.         PID    Vendor                           
+-------------------------------------------------------------------------------
+n7    BGAK519-030  8/20  Windows-x64  19788  Intel(R) Core(TM) Ultra 7 265    
+n6    BGAK519-030  7/20  Windows-x64  17016  Intel(R) Core(TM) Ultra 7 265    
+n5    BGAK519-030  6/20  Windows-x64  16316  Intel(R) Core(TM) Ultra 7 265    
+n4    BGAK519-030  5/20  Windows-x64  18020  Intel(R) Core(TM) Ultra 7 265    
+n3    BGAK519-030  4/20  Windows-x64  23524  Intel(R) Core(TM) Ultra 7 265    
+n2    BGAK519-030  3/20  Windows-x64  24552  Intel(R) Core(TM) Ultra 7 265    
+n1    BGAK519-030  2/20  Windows-x64  27344  Intel(R) Core(TM) Ultra 7 265    
+n0*   BGAK519-030  1/20  Windows-x64  23304  Intel(R) Core(TM) Ultra 7 265    
+host  BGAK519-030        Windows-x64  25720  Intel(R) Core(TM) Ultra 7 265    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cortex Process ID: 24920 
+License Server Path: 1055@10.152.168.6 
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Transcript Stop Time:  15:44:26, 22 Jul 2026 Hora est. Pacífico, Sudamérica 
+Total Transcript Time: 0 Minute 0 Second.

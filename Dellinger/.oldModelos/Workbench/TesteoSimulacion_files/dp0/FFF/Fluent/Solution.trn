@@ -1,0 +1,40 @@
+Transcript Start Time:  16:26:04, 22 Jul 2026 Hora est. Pacífico, Sudamérica 
+Current Directory: "C:\Users\estudiante.upb"
+
+Build Time: Jun 16 2025 10:42:46 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v252/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname     Core  O.S.         PID    Vendor                           
+-------------------------------------------------------------------------------
+n3    BGAK519-030  4/20  Windows-x64  16668  Intel(R) Core(TM) Ultra 7 265    
+n2    BGAK519-030  3/20  Windows-x64  25692  Intel(R) Core(TM) Ultra 7 265    
+n1    BGAK519-030  2/20  Windows-x64  28136  Intel(R) Core(TM) Ultra 7 265    
+n0*   BGAK519-030  1/20  Windows-x64  3344   Intel(R) Core(TM) Ultra 7 265    
+host  BGAK519-030        Windows-x64  20044  Intel(R) Core(TM) Ultra 7 265    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cortex Process ID: 16116 
+License Server Path: 1055@10.152.168.6 
+Reading "C:\Users\estudiante.upb\Documents\Semillero\Modelos\Workbench\TesteoSimulacion_files\dp0\FFF\Fluent\FFF.3.msh.h5" ...
+3D mesh
+nodes: 0
+edges: 0
+faces: 0 
+cells: 0 
+reading 0 node zones
+reading 0 edge zones
+reading 0 face zones
+
+Warning: no nodes readanalyzing boundary connectivity...done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Writing "C:\Users\estudiante.upb\Documents\Semillero\Modelos\Workbench\TesteoSimulacion_files\dp0\FFF\Fluent\FFF.msh.h5" ...
+writing 0 node zones
+writing 0 edge zones 
+writing 0 face zones 
+done.Transcript Stop Time:  16:26:07, 22 Jul 2026 Hora est. Pacífico, Sudamérica 
+Total Transcript Time: 0 Minute 3 Second.

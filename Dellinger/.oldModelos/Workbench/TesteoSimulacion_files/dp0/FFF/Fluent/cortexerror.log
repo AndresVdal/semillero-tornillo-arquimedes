@@ -1,0 +1,8 @@
+
+Error [cortex] [time 7/28/26 18:32:2] Selection aborted as you are selecting more entities than max limit(100000). You can change max limit to say 200,000 using (cx-set-max-selection-limit 200000).
+
+Error [cortex] [time 7/28/26 18:32:16] Selection aborted as you are selecting more entities than max limit(100000). You can change max limit to say 200,000 using (cx-set-max-selection-limit 200000).
+
+Error [cortex] [time 7/28/26 18:33:2] Selection aborted as you are selecting more entities than max limit(100000). You can change max limit to say 200,000 using (cx-set-max-selection-limit 200000).
+
+Error [cortex] [time 7/28/26 18:39:30] Selection aborted as you are selecting more entities than max limit(100000). You can change max limit to say 200,000 using (cx-set-max-selection-limit 200000).

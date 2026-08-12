@@ -1,0 +1,81 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="FFF")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Save(Overwrite=True)
+geometry1.Exit()
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1 = GetDataEntity("/Mesh/TGridData:TGridData")
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=8))
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+geometry1.Edit(IsSpaceClaimGeometry=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+Save(Overwrite=True)
+geometry1.Exit()
+geometryComponent1.Update(AllDependencies=True)
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=8))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Arguments.set_state({r'FileName': r'C:\\Users\\estudiante.upb\\Documents\\Semillero\\Modelos\\Workbench\\TesteoSimulacion_files\\dp0\\FFF\\DM\\FFF.scdocx',r'ImportCadPreferences': {r'CISeparation': r'region & angle',r'ShowImportCadPreferences': True,},r'LengthUnit': r'm',r'UseBodyLabels': r'Yes',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-use-window-id 51)(cx-use-window-id 51)(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(0.526113 -3.03179 1.77815) '(0 0 0) '(0.296485 0.262568 0.364671) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-4.18712 -7.38167 -2.63974) '(0 0 0) '(0.521631 -0.645284 1.02616) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.230346 -0.383498 -1.3842) '(0 0 0) '(-0.237137 -0.180521 0.0954553) 0 0)(cx-use-window-id 51)(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(-2.20672 0.435074 -0.479914) '(0 0 0) '(-0.0299379 -0.0872244 0.0108122) 0 0)(cx-use-window-id 51)(handle-key \"??\")(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(1.81544 -0.369218 0.707377) '(0 0 0) '(-0.029883 0.125211 -0.01399) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.535224 0.123549 0.645017) '(0 0 0) '(0.00515423 0.102029 -0.0245998) 0 0)(cx-use-window-id 51)(cx-use-window-id 51)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 5,r'BOIControlName': r'proximity_1',r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Proximity',r'BOIFaceLabelList': [r'rotatoria-open-cascade-step-translator-7.9-1.1'],r'BOIGrowthRate': 1.2,r'BOIMaxSize': 0.0015,r'BOIMinSize': 0.0002,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOIControlName': r'cara-tornillo',r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'rotatoria-open-cascade-step-translator-7.9-1.1'],r'BOIGrowthRate': 1.2,r'BOISize': 0.0015,r'BOIZoneorLabel': r'label',r'DrawSizeControl': True,})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'CellsPerGap': 3,r'MaxSize': 0.008,r'MinSize': 0.0002,r'ScopeProximityTo': r'faces',},})\")")
+Save(Overwrite=True)
+geometry1.Exit()
+Reset()
+Extensions.UnloadExtension(
+    Id="5e7e01a6-8601-11e8-9f8c-28f10e13ffe6",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="5f463412-bd3e-484b-87e7-cbc0a665e474",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="ba012e44-4f35-4a97-aeff-8fe60efc33c9",
+    Version="25.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="7b0e9e84-396d-4099-9602-2ced9dddc253",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="20180725-3f81-49eb-9f31-41364844c769",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="f3e3da52-fb02-4910-8cc9-980efd047bc6",
+    Version="2023.1",
+    Format="Binary")
