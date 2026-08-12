@@ -161,11 +161,11 @@ Monitores definidos: `report-def-0` y `report-def-1` (torque), `mdot_inlet`,
 
 ### Fase B — Corregir la configuración
 
-- [ ] B1 — Quitar `artesa` de `report-def-0`; dejar solo `tornillo`
-- [ ] B2 — `Average Over (Time Steps)` = **240**
+- [✓] B1 — Quitar `artesa` de `report-def-0`; dejar solo `tornillo`
+- [✓] B2 — `Average Over (Time Steps)` = **240**
 - [ ] B3 — Redefinir `report-def-1` como torque **viscoso**
 - [ ] B4 — Apuntar `mdot_intf` a `intf:01:entrada-...::int_rot_arriba`
-- [ ] B5 — Subir `Max Iterations/Time Step` de 20 a **40**
+- [✓] B5 — Subir `Max Iterations/Time Step` de 20 a **40**
 - [ ] B6 — Revisar el esquema VOF (Explícito ⇒ Courant ≤ 0.25)
 - [ ] B7 — Ejecutar `General → Check`
 - [ ] B8 — `File → Write → Start Transcript` antes de correr
